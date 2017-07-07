@@ -13,7 +13,7 @@
             // Act
             $result = $test_counter->countWords($input_string, $input_count);
             // Assert
-            $this->assertEquals([$input_count=>2], $result);
+            $this->assertEquals(2, $result);
         }
     }
 ?>
