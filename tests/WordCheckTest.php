@@ -8,7 +8,7 @@
             // Arrange
             $test_counter = new Counter;
             $input_string = "I am what I am.";
-            $input_count = "i";
+            $input_count = "I";
 
             // Act
             $result = $test_counter->countWords($input_string, $input_count);
@@ -21,7 +21,7 @@
             // Arrange
             $test_counter = new Counter;
             $input_string = "People are people and people people places.";
-            $input_count = "people";
+            $input_count = "People";
 
             // Act
             $result = $test_counter->countWords($input_string, $input_count);
