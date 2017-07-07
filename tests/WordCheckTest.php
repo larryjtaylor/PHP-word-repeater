@@ -41,5 +41,18 @@
             // Assert
             $this->assertEquals(2, $result);
         }
+
+        function testCountWordsMultiSentence()
+        {
+            // Arrange
+            $test_counter = new Counter;
+            $input_string = "People are people and people people places. People are not not people though.";
+            $input_count = "people";
+
+            // Act
+            $result = $test_counter->countWords($input_string, $input_count);
+            // Assert
+            $this->assertEquals(6, $result);
+        }
     }
 ?>
