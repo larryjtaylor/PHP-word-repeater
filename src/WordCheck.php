@@ -7,8 +7,9 @@
 
         $count = 0;
         $phrase_arr = explode(' ', $input_string);
+        $phrase_arr_lower = array_map('strtolower', $phrase_arr);
 
-            foreach($phrase_arr as $word)
+            foreach($phrase_arr_lower as $word)
             {
                 if($word == $input_count)
                 {
