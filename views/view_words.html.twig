@@ -1,5 +1,5 @@
-
-    <hegad>
+<html>
+    <head>
         <link rel='stylesheet' type='text/css' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
         <title>Word Repeater</title>
     </head>
@@ -8,11 +8,11 @@
             <div class='jumbotron'>
                 <h1>What a glorious day!</h1>
             </div>
-            <h2>Now you know how many times a word is in a sentence. Curing cancer be damned! You just found a new hobby.</h2>
-            <h3>
-                {% for  %}
-                {% endfor %}
-            </h3>
+            <h3>Now you know how many times a word is in a sentence. Curing cancer be damned! You just found a new hobby!</h3>
+            <h5>{{ input_count }} appears in the sentence {{ count }} times!</h5>
+
+            <a href="/"><button type="button" class="btn btn-primary" name="home">Back To Home</button></a>
+
         </div>
     </body>
 </html>

@@ -10,8 +10,11 @@
     $app->get('/', function() use ($app) {
         return $app['twig']->render('words.html.twig');
     });
+
     $app->get('/view_repeats', function() use ($app){
+        var_dump($count);
         return $app['twig']->render('views_words.html.twig');
     });
+    
     return $app;
 ?>
