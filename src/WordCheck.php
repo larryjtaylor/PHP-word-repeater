@@ -1,8 +1,8 @@
 <?php
 
-    class Counter
+    class RepeatCounter
     {
-        function countWords ($input_string, $input_count)
+        function countRepeats ($input_string, $input_count)
         {
 
         $count = 0;
