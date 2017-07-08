@@ -11,7 +11,7 @@
         return $app['twig']->render('words.html.twig');
     });
     $app->get('/view_repeats', function() use ($app){
-        return $app['twig']->render('views_words.html.twig')
+        return $app['twig']->render('views_words.html.twig');
     });
     return $app;
 ?>
