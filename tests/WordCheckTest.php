@@ -46,7 +46,7 @@
         {
             // Arrange
             $test_counter = new Counter;
-            $input_string = "People are people and people people places. People are not not people though.";
+            $input_string = "People are people and people people places. People are not not people.";
             $input_count = "people";
 
             // Act

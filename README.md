@@ -14,6 +14,6 @@
     * Input: My sister turns 9 today, and 9 is a great age!
     * Output: 9 appears 2 times
 
-* The program will return the number of times a word appears in multiple sentences. This will allow whole passages of books, poems, speeches, etc. to be used as the source material. 
+* The program will return the number of times a word appears in multiple sentences. This will allow whole passages of books, poems, speeches, etc. to be used as the source material.
     * Input: My sister turns nine today. Nine was a great age! Remember when you were nine?
     * Output: "nine" appears 3 times
