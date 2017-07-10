@@ -6,18 +6,18 @@
     <body>
         <div class='container'>
             <div class='jumbotron'>
-                <h1>Pete and Repeat's Repeating Reader</h1>
+                <h1>Pete and Repeat's Repeat Reader</h1>
             </div>
             <h2>Find put how many times a word appears in a sentence!</h2>
             <h5>Type a sentence or phrase in the first box. Then type a word that appears in that sentence in the second box. Then click the button below to find out how many times the word appears in the sentence. Just think of the millions of everyday uses!</h5>
             <form action='/view_repeats'>
                 <div class='form-group'>
-                    <label for='input_string'>Type your sentence here:</label>
-                    <input type='text' name='input_string'required placeholder='ex: How do you do, sir?'>
+                    <label for='string'>Type your sentence here:</label>
+                    <input type='text' name='string'required placeholder='ex: How do you do, sir?'>
                 </div>
                 <div class='form-group'>
-                    <label for='input_count'>Word:</label>
-                    <input type='text' name='input_count' required placeholder="ex: do">
+                    <label for='word'>Word:</label>
+                    <input type='text' name='word' required placeholder="ex: do">
                 </div>
                 <button type='submit' name='' class='btn'>Word, homie!</button>
             </form>
