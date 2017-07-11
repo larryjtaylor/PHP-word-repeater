@@ -14,12 +14,11 @@
 
     $app->get('/view_repeats', function() use($app) {
         $word = $_GET['word'];
-        $phrase = $_GET['string'];
-        $new_repeat_counter = new RepeatCounter($word, $sentence);
-        $count = $new_repeat_counter->countRepeats($word, $sentence);
+        $string = $_GET['string'];
+        $new_repeat_counter = new RepeatCounter($string, $word);
+        $count = $new_repeat_counter->countRepeats($string, $word);
 
-        var_dump($word);
-        return $app['twig']->render('view_words.html.twig', array('show_count' => $count, 'show_word' => _GET['word'], 'show_string' => _GET['string']));
+        return $app['twig']->render('view_words.html.twig', array('show_word' => $_GET['word'], 'show_count' => $count));
     });
 
     return $app;

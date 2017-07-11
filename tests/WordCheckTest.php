@@ -8,10 +8,10 @@
             // Arrange
             $test_counter = new RepeatCounter;
             $input_string = "I am what I am.";
-            $input_count = "i";
+            $input_word = "i";
 
             // Act
-            $result = $test_counter->countRepeats($input_string, $input_count);
+            $result = $test_counter->countRepeats($input_string, $input_word);
             // Assert
             $this->assertEquals(2, $result);
         }
@@ -21,10 +21,10 @@
             // Arrange
             $test_counter = new RepeatCounter;
             $input_string = "People are people and people people places.";
-            $input_count = "people";
+            $input_word = "people";
 
             // Act
-            $result = $test_counter->countRepeats($input_string, $input_count);
+            $result = $test_counter->countRepeats($input_string, $input_word);
             // Assert
             $this->assertEquals(4, $result);
         }
@@ -34,10 +34,10 @@
             // Arrange
             $test_counter = new RepeatCounter;
             $input_string = "10 out of 10 chimps agree: Jane Goodall is a hack.";
-            $input_count = "10";
+            $input_word = "10";
 
             // Act
-            $result = $test_counter->countRepeats($input_string, $input_count);
+            $result = $test_counter->countRepeats($input_string, $input_word);
             // Assert
             $this->assertEquals(2, $result);
         }
@@ -47,10 +47,11 @@
             // Arrange
             $test_counter = new RepeatCounter;
             $input_string = "People are people and people people places. People are not not people though.";
-            $input_count = "people";
+            $input_word = "people";
 
             // Act
-            $result = $test_counter->countRepeats($input_string, $input_count);
+            $result = $test_counter->countRepeats($input_string, $input_word);
+            
             // Assert
             $this->assertEquals(6, $result);
         }

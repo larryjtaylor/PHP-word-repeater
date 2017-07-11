@@ -7,9 +7,9 @@
         {
 
         $count = 0;
-        $phrase_arr = explode(' ', $string);
+        $phrase_arr = explode(' ', $input_string);
         $phrase_arr_lower = array_map('strtolower', $phrase_arr);
-        $word_lower = strtolower($word);
+        $word_lower = strtolower($input_word);
 
             foreach($phrase_arr_lower as $item)
             {
